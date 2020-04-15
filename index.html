@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+  <!-- the MAIN.CSS file is linked here -->
+</head>
+
+<body>
+  <div id="app">
+    <div class="center">
+      <h1>Play the Guessing Game!</h1>
+      <h3 id="subtitle">Guess a number between 1-100!</h3>
+    </div>
+
+    <!-- Hot or cold -->
+    <div id='guess-feedback' class='center'>
+      <h4></h4>
+    </div>
+
+    <div>
+      <!-- number bubble  -->
+      <div id="input-parent">
+        <input class="center nes-input is-success" id="player-input" maxlength='3' autofocus=autofocus></input>
+        <button id="submit">Go!<i class="nes-icon coin is-large"></i></button>
+      </div>
+
+      <div class="center">
+        <ul id="guess-list">
+          <li class="guess-box nes-btn is-warning">-</li>
+          <li class="guess-box nes-btn is-warning">-</li>
+          <li class="guess-box nes-btn is-warning">-</li>
+          <li class="guess-box nes-btn is-warning">-</li>
+          <li class="guess-box nes-btn is-warning">-</li>
+        </ul>
+        <button type="button" class="nes-btn is-error" id = "reset">Reset Game</button><br>
+        <button type="button" class="nes-btn is-primary" id="hint">Hint</button>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer" class="center">
+    <h4>Project by Linda Eng</h4>
+    <i class="nes-icon linkedin is-small"></i>
+    <i class="nes-icon github is-small"></i>
+  </footer>
+
+<script src='js/guessing-game.js'></script>
+<!-- Check the script tag in the head element, notice the attribute used on the script element called "defer" -->
+</body>
+
+</html>
