@@ -157,7 +157,8 @@ class Game {
     });
 
     hintButton.addEventListener('click', () => {
-
+      
+      
       if (this.winningNumber % 2 !== 0) document.querySelector('#guess-feedback > h4').innerHTML = `The number is Odd` 
       else document.querySelector('#guess-feedback > h4').innerHTML = `The number is Even`
       
@@ -165,11 +166,20 @@ class Game {
     })
 
     guessList.addEventListener('click', (event) => {
-      const feedback = document.querySelector('#guess-feedback > h4').innerHTML
+      
+      let feedback = document.querySelector('#guess-feedback > h4')
       const buttonClicked = event.target;
+
       const buttonValue = parseInt(buttonClicked.innerHTML)
-      if(buttonValue === '')
-      feedback.innerHTML = `You chose ${buttonValue}`;
+      
+      feedback.innerHTML = `You chose ${buttonValue} and you are about ${(this.winningNumber-buttonValue)+Math.floor(Math.random() * 10)} away! `;
+      
+
+
+      
+
+
+
 
     });
 

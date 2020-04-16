@@ -1,5 +1,6 @@
 /* Write your CSS code in this file */
 
+
 ul {
   list-style: none;
   padding: 0;
@@ -13,7 +14,7 @@ img {
 #app {
   width: 60%;
   margin: 50px auto;
-  background-color: rgba(256, 256, 256, 0.5);
+
   position: relative;
 }
 
@@ -26,7 +27,7 @@ img {
 
 /* For the input element */
 #player-input {
-  border-radius: 50%;
+  border-radius: 0%;
   width: 120px;
   height: 120px;
   font-size: 40px;
@@ -52,12 +53,14 @@ img {
 
 #hint {
   width: 50%;
+  margin-bottom: 30px;
  
 }
 
 /* For the last div in the project, that says who made the game */
 #footer {
   width: 100%;
+  padding-top: 10px;
   border-top: solid 2px black;
   background-color: white;
   position: fixed;
@@ -78,3 +81,4 @@ img {
   border-radius: 10%;
   background-color: white;
 }
+
